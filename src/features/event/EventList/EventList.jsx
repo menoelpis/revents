@@ -10,7 +10,7 @@ class EventList extends Component {
         <EventListItem />
         <EventListItem />
       </div>
-    )
+    );
   }
 }
 

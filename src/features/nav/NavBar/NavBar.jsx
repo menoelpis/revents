@@ -20,7 +20,7 @@ class NavBar extends Component {
           </Menu.Item>
         </Container>
       </Menu>
-    )
+    );
   }
 }
 

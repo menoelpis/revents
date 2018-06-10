@@ -37,7 +37,7 @@ class EventListItem extends Component {
           <Button as="a" color="teal" floated="right" content="View" />
         </Segment>
       </Segment.Group>
-    )
+    );
   }
 }
 
