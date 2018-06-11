@@ -14,16 +14,16 @@ class EventForm extends Component {
 
   onFormSubmit = (evt) => {
     evt.preventDefault();
-    console.log(this.state.event);
+    this.props.createEvent(this.state.event);
   }
 
   onInputChange = (evt) => {
     const newEvent = this.state.event;
-    newEvent[evt.target.name] = evt.target.value
+    newEvent[evt.target.name] = evt.target.value;
 
     this.setState({
       event: newEvent
-    })
+    });
   }
 
   render() {
