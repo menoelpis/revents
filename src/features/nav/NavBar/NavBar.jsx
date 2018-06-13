@@ -32,10 +32,11 @@ class NavBar extends Component {
             Re-vents
           </Menu.Item>
           <Menu.Item as={NavLink} to='/events' name="Events" />
-          <Menu.Item as={NavLink} to='/people' name="People" />
+          {authenticated && <Menu.Item as={NavLink} to='/people' name="People" />}
+          {authenticated &&
           <Menu.Item>
             <Button as={Link} to='/createEvent' floated="right" positive inverted content="Create Event" />
-          </Menu.Item>
+          </Menu.Item>}
           { authenticated ?
               <SignedInMenu signOut={this.handleSignOut}/>
               :
